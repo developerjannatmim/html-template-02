@@ -2,50 +2,33 @@
 Common CSS
 =========================*/
 body{
-  background-image: url(../img/img_11.png);
-  background-size: cover;
-  background-position: center ;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   color: #333;
   font-size: 15px;
-  height: 650px;
   margin: 0; 
   padding: 0;
+  box-sizing: border-box;
   }
+
   p{
     font-weight: 400;
   }
+
   h1,h2,h3,h4,h5,h6{
     font-weight: 700;
-    line-height: 1.5em;
     margin: 0 0 15px;
   }
   .container{
-  width: 1170px;
-  margin: 0 auto;
+  width: 1350px;
+  margin: 0 auto; 
   }
+
+
   a{
-  transition: .5s;
+  transition: .7s;
   text-decoration: none;
   }
   
-  .slicknav_menu{
-    display: none; 
-  }
-  
-  #scrollUp{
-    text-indent: -99999px;
-    background-image: url(../img/top_to_bottom.png);
-    width: 32px;
-    height: 32px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    
-  }
-
 
 /*======================
 Top header CSS
@@ -67,6 +50,7 @@ float: left;
   padding: 0;
   list-style: none;
   text-align: left;
+  margin-left: 30px;
 
 }
 .top_header_area .social_area ul li{
@@ -78,10 +62,10 @@ float: left;
   color: #ffffff ;
   border-radius: 50%;
   width: 35px;
-  height: 28px;
+  height: 26px;
   display: block;
   text-align: center;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 .top_header_area .social_area ul li a:hover{
   background: #5aa524;
@@ -94,7 +78,8 @@ float: left;
 }
 .top_header_area .search_area form{
   float: right; 
-  width: 300px;}
+  width: 300px;
+}
 
 .top_header_area .search_area input[type="text"]{
   background: #fff ;
@@ -109,7 +94,7 @@ float: left;
   color: #fff;
   border-radius: 0px 5px 5px 0px;
   border: 0;
-  padding: 10px;
+  padding: 11px;
   font-weight: 600;
   cursor: pointer;
   margin-left: -5px;
@@ -128,7 +113,7 @@ Logo CSS
   color: #7d4c55;
   font-size: 35px;
   font-family: Arial;
-  padding-left: 20px;
+  padding-left: 50px;
   float: left; 
 }
 
@@ -140,78 +125,201 @@ Logo CSS
 /*=====================
 Main menu Css
 ========================*/
-.main_menu{
-  background: #148802;
-  height: 49px;
-  }
-  .nav_area .container{
-    width: 100%;
-  }
-  .main_menu ul{
-  
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-  .main_menu ul li{
-   display: inline-block;
-   margin: 0 5px;
-  }
-  .main_menu ul li a{
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    display: block;
-    padding: 15px 15px;
-  }
-  .main_menu ul li a:hover{
-    background: #4eb828;
-    
-  }
 
-.sub-menu-1{
-  display: none;
+#main_menu{
+  width: 100%;
+  clear: both;
 }
 
-.main_menu ul li:hover .sub-menu-1{
-  display: block;
+.inner_menu{
+  background: #5daa39;
+  position: relative;
+  width: 100%;
+  min-height: 35px;
+  padding: 15px 0;
+  z-index: 1;
+}
+.inner_menu::after{
+  background: #639e20;
   position: absolute;
-  background: rgb(134, 184, 40);
-  margin-top: 15px;
-  margin-left: -1px;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
 }
 
-.main_menu ul li:hover .sub-menu-1 ul{
+#main_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+#main_menu ul li a{
+  color: #fff;
+  text-decoration: none;
   display: block;
-  margin: 10px;
-}
-
-.main_menu ul li:hover .sub-menu-1 ul li{
-  width: 150px;
   padding: 10px;
-  border-bottom: 1px dotted #fff;
-  background: transparent;
-  border-radius: 0;
-  text-align: left;
 }
 
-.main_menu ul li:hover .sub-menu-1 ul li:last-child{
-  border-bottom: none;
+#main_menu ul a:hover{
+  color: #12fd1d;
+}
+
+#main_menu ul li:hover a{
+  color: #257725;
+}
+#main_menu ul li:hover ul li a{
+  color: #fff ;
+}
+
+/*=====================
+Dropdown menu Css
+========================*/
+
+#main_menu ul ul{
+  position: absolute;
+  background: #7dda26;
+  width: 180px;
+  left: -999999px;
+  top: 30px;
+}
+
+#main_menu ul li:hover ul{
+  left: 0;
+}
+#main_menu ul li:hover ul ul{
+  left: -999999px;
+}
+#main_menu ul ul ul{
+  left: -999999px;
+  top: 0px;
+}
+#main_menu ul li ul li:hover ul{
+  left: 180px;
+}
+
+#main_menu ul ul li{
+  margin: 0;
+  display: block;
+}
+
+#main_menu ul ul li a:hover{
+  background: #333333;
+  color: #ffffff;
+}
+#main_menu ul ul li:hover a{
+  background: #333333;
+  color: #ffffff;
+}
+#main_menu ul ul li:hover a{
+  background: #359100;
+  color: #ffffff;
+}
+#main_menu ul ul li:hover ul li a{
+  background: none;
+  color: #ffffff;
+}
+#main_menu ul ul li ul li a:hover{
+  background: #359100;
+  color: #ffffff;
+}
+
+/*====================
+ slider area CSS
+ =======================*/
+
+#slider_area img{
+  width: 100%;
+  height: 600px;
 }
 
 
-.main_menu ul li:hover .sub-menu-1 ul li a:hover{
-  color: #ff1e65;
+/*=====================
+Feature Area Css
+========================*/
+
+#feature_area{
+  padding: 70px 20px;
+}
+#feature_area .row:first-child{
+  margin-bottom: 50px;
+  text-align: center;
+
 }
 
+#feature_area .child_feature_area{
+  width: 31%;
+  float: left;
+  margin: 0 1%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#feature_area .left_feature{
+width: 30%;
+float: left;
+}
+#feature_area .left_feature i{
+  width: 50%;
+  border: 1px solid #ddd;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: #86db26;
+  font-size: 20px;
+  
+  
+}
+#feature_area .child_feature_area:hover .left_feature i{
+   background: #8acc10;
+   color: #fff;
+   transition: .5s;
+   border: none;
+  
+  
+}
+#feature_area .right_feature{
+  width: 65%;
+  float: right;
+}
+#feature_area .right_feature h5{
+ color: #4d5359;
+ font-size: 16px;
+ font-weight: 600;
+ position: relative;
+ padding-bottom: 10px;
+}
+#feature_area .right_feature h5::after{
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #4d5359;
+ }
+ #feature_area .right_feature p{
+  color: #7a7c82;
+  font-size: 13px;
+  
+ }
+ #feature_area .right_feature a{
+  color: #36393a;
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: 600;
+ }
+ #feature_area .right_feature a:hover{
+  color: #43df43;
 
-
-
-
-
-
-
-
+ }
 
 
