@@ -110,7 +110,7 @@ float: left;
 Logo CSS
 ========================*/
 .logo{
-  color: #7d4c55;
+  color: #101f38;
   font-size: 35px;
   font-family: Arial;
   padding-left: 50px;
@@ -322,4 +322,194 @@ float: left;
 
  }
 
+/*=======================
+Service area CSS
+============================*/
+
+.service_area{
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.service_area .inner_service{
+  overflow: hidden;
+}
+.service_area .inner_service h2.title{
+  color: #333;
+  font-weight: 600;
+  font-size: 34px;
+  text-align: center;
+}
+.service_area .inner_service p.sub_title{ 
+  color: #333 ;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.service_area .main_service{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.service_area .child_service{
+  width: 225px;
+  padding: 130px 60px 80px 105px;
+  float: left;
+  position: relative;
+  border-radius: 5px;
+}
+.service_area .child_service:hover{
+  background: #cbff8f;
+  transition: 0.9s;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px 10px #ddd;
+}
+.service_area .child_service h3{
+  color: #523827;
+  font-size: 100px;
+  font-weight: 700 ;
+  font-family: 'Oswald',sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+
+}
+.service_area .child_service h4{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 22px;
+}
+.service_area .child_service h4 a{
+  color: #523827;
+  
+}
+.service_area .child_service h4:hover a{}
+.service_area .child_service p{
+  color: #000;
+  font-size: 15px;
+  opacity: 50%;
+
+}
+
+
+/*=============================
+Contact rea CSS
+===============================*/
+.contact_area{
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+  background: url(img/img_05.jpg);
+  background-size: cover;
+  background: #101f38;
+}
+.contact_area .inner_contact{
+  overflow: hidden;
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.contact_area .inner_contact h2.title{
+  color: #fff;
+  text-align: center;
+  font-weight: 400 ;
+  font-family: 'Oswald',sans-serif;
+  font-size: 36px;
+
+}
+.contact_area .main_contact_form{
+width: 100%;
+overflow: hidden;
+margin-top: 20px;
+text-align: center;
+
+}
+.contact_area .main_contact_form input{
+  background: #fff;
+  border: 0;
+  padding: 15px 3%;
+  float: left;
+  margin: 0 1% 2%;
+  border-radius: 5px;
+  width: 42%;
+ 
+}
+.contact_area .main_contact_form textarea{
+  background: #fff;
+  border: 0;
+  padding: 15px 3%;
+  border-radius: 5px;
+  width: 92%;
+  margin: 0 1% 2%;
+  min-height: 100px;
+}
+.contact_area .main_contact_form input[type="submit"]{
+  
+  background: #6dc916;
+  color: #fff;
+  font-size: 21px;
+  font-weight: normal;
+  border-radius: 25px;
+  width: 250px;
+  margin: 0 auto;
+  cursor: pointer;
+  float: none;
+  transition: 0.4s;
+
+}
+.contact_area .main_contact_form input[type="submit"]:hover{
+transition: .5s;
+background: #47aa0e;
+}
+
+/*=======================
+Footer area CSS
+===========================*/
+.footer_area{
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  overflow: hidden;
+
+}
+.footer_area .inner_footer{overflow: hidden;}
+.footer_area .footer_logo{
+  text-align: center;
+  width: 420px;
+  max-width: 80%;
+  margin: 0 auto 20px;
+  
+}
+.footer_area .copyright_area{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+ 
+}
+.footer_area .copyright_area p{
+color: #6a3144;
+font-size: 14px;
+margin-bottom: 0;
+}
+
+.footer_area .copyright_area span{
+  color: #181717;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-bottom: 0;
+  }
+
+.logo1{
+  color: #101f38;
+  font-size: 53px;
+  font-weight: bold;
+  font-family: Arial;
+  padding-left: 50px;
+  float: center; 
+}
 
