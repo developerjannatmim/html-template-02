@@ -394,7 +394,63 @@ Service area CSS
   opacity: 50%;
 
 }
+/*======================
+Accordion CSS
+========================*/
 
+.accordion{
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.accordion-tab .accordion-toggle{
+  display: none;
+}
+
+.accordion-tab label{
+  color: hsl(0, 0%, 100%);
+  background: #5daa39;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.accordion-tab .accordion-content{
+  max-height: 0;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+
+.accordion-tab .accordion-content p{
+  padding: 5px 10px;
+  line-height: 20px;
+}
+.accordion-tab .accordion-toggle:checked ~ .accordion-content{
+ max-height: 100vh;
+ padding: 20px;
+}
+.accordion .title{
+  text-align: center;
+  margin: 15px;
+  font-size: 30px;
+  font-family: Arial;
+
+}
+
+.accordion .sub_title{
+  text-align: center;
+  margin: 15px;
+  font-size: 20px;
+  font-family: Arial;
+  margin-bottom: 40px;
+}
 
 /*=============================
 Contact rea CSS
